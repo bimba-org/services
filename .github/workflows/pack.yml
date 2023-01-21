@@ -1,0 +1,33 @@
+name: Format and pack services
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  pack:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Install tools
+        run: sudo apt install -y jq moreutils
+
+      - name: Format services
+        run: for file in services/*.json; do jq < $file | sponge $file; done
+
+      - name: Pack services
+        run: python pack.py
+
+      - name: Commit files
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add *
+          diff-index --quiet HEAD || git commit -m "Format and pack services"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master

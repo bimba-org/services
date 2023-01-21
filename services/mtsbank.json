@@ -1,0 +1,14 @@
+{
+  "phone_codes": [
+    7
+  ],
+  "requests": [
+    {
+      "method": "POST",
+      "url": "https://www.mtsbank.ru/ajax/sms.php",
+      "data": {
+        "phone": "{full_phone}"
+      }
+    }
+  ]
+}
