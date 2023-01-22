@@ -5,7 +5,7 @@
   "requests": [
     {
       "method": "POST",
-      "url": "https://aptechestvo.ru/ajax/new_app/sms/send_sms_code.php",
+      "url": "https://dobropizza.ru/ajaxopen/userregisterdobro",
       "data": {
         "username": "{formatted_phone:+*(***) ***-**-**}",
         "sms": "0",
