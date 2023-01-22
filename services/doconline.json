@@ -1,0 +1,19 @@
+{
+  "phone_codes": [
+    7
+  ],
+  "requests": [
+    {
+      "method": "POST",
+      "url": "https://lk.doconline.ru/api/v1/auth/phones/codes",
+      "json": {
+        "phone": "{full_phone}",
+        "gRecaptcha": "*"
+      },
+      "headers": {
+        "User-Agent": "okhttp/3.12.13",
+        "mobile-device": "android/bengal"
+      }
+    }
+  ]
+}
