@@ -1,0 +1,17 @@
+{
+  "phone_codes": [
+    7
+  ],
+  "requests": [
+    {
+      "method": "POST",
+      "url": "https://api.apteka.ru/Auth/Auth_Code",
+      "json": {
+        "phone": "+{full_phone}"
+      },
+      "headers": {
+        "Content-Type": "text/plain"
+      }
+    }
+  ]
+}
