@@ -1,0 +1,14 @@
+{
+  "phone_codes": [
+    7
+  ],
+  "requests": [
+    {
+      "method": "POST",
+      "url": "https://aptechestvo.ru/ajax/new_app/sms/send_sms_code.php",
+      "data": {
+        "phone": "{formatted_phone:+* (***) ***-**-**}"
+      }
+    }
+  ]
+}

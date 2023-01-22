@@ -1,0 +1,15 @@
+{
+  "phone_codes": [
+    7
+  ],
+  "requests": [
+    {
+      "method": "POST",
+      "url": "https://italiani.rest/local/templates/italini/PhoneAuth.php",
+      "data": {
+        "phone": "{formatted_phone:+*(***)***-**-**}",
+        "type": "sendauth"
+      }
+    }
+  ]
+}
