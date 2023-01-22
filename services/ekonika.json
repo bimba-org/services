@@ -1,0 +1,18 @@
+{
+  "phone_codes": [
+    7
+  ],
+  "requests": [
+    {
+      "method": "POST",
+      "url": "https://ekonika.ru/services/rest/v1/authentication/get_code",
+      "json": {
+        "flow": "auth",
+        "phone": "{full_phone}"
+      },
+      "headers": {
+        "User-Agent": "okhttp/5.0.0-alpha.9"
+      }
+    }
+  ]
+}
