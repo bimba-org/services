@@ -1,0 +1,23 @@
+{
+  "phone_codes": [
+    7
+  ],
+  "requests": [
+    {
+      "method": "POST",
+      "url": "https://zdesapteka.ru/rest/v2022m/post/clients/getCode",
+      "json": {
+        "phone": "{formatted_phone:(***) ***-****}",
+        "device": "android",
+        "deviceUUID": "",
+        "repeat": false
+      },
+      "headers": {
+        "User-Agent": "",
+        "Accept": "application/json, text/plain, */*",
+        "authorization-password": "rZdapi_8_tAp",
+        "authorization-login": "rest_api"
+      }
+    }
+  ]
+}
