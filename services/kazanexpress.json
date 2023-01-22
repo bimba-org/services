@@ -1,0 +1,18 @@
+{
+  "mode": "cors",
+  "phone_codes": [
+    7
+  ],
+  "requests": [
+    {
+      "method": "POST",
+      "url": "https://api.kazanexpress.ru/api/restore",
+      "json": {
+        "login": "{full_phone}"
+      },
+      "headers": {
+        "Authorization": "Basic a2F6YW5leHByZXNzLWFuZHJvaWQ6YW5kcm9pZFNlY3JldEtleQ=="
+      }
+    }
+  ]
+}

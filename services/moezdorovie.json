@@ -1,0 +1,22 @@
+{
+  "mode": "cors",
+  "phone_codes": [
+    7
+  ],
+  "requests": [
+    {
+      "method": "POST",
+      "url": "https://moezdorovie.ru/rpc/?method=auth.GetCode",
+      "json": {
+        "jsonrpc": "2.0",
+        "id": "39",
+        "method": "auth.GetCode",
+        "params": {
+          "phone": "{phone}",
+          "mustExist": false,
+          "sendRealSms": true
+        }
+      }
+    }
+  ]
+}

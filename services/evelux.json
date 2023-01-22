@@ -1,0 +1,16 @@
+{
+  "phone_codes": [
+    7
+  ],
+  "requests": [
+    {
+      "method": "POST",
+      "url": "https://evelux.ru/local/templates/evelux/ajax/confirm.phone.php",
+      "data": {
+        "PHONE": "{formatted_phone:+* (***) ***-**-**}",
+        "TYPE": "REG",
+        "CONFIRM_PHONE": "Y"
+      }
+    }
+  ]
+}
