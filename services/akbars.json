@@ -1,0 +1,19 @@
+{
+  "phone_codes": [
+    7
+  ],
+  "requests": [
+    {
+      "method": "POST",
+      "url": "https://bankok.akbars.ru/identityabo/anonymousFlow/init",
+      "json": {
+        "Phone": "{phone}"
+      },
+      "headers": {
+        "User-Agent": "ABOL/3.123.0 (Android 12; Xiaomi unknown)",
+        "X-App-Platform": "Android",
+        "X-App-Version": "3.123.0"
+      }
+    }
+  ]
+}
