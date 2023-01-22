@@ -1,0 +1,21 @@
+{
+  "phone_codes": [
+    7
+  ],
+  "requests": [
+    {
+      "method": "POST",
+      "url": "https://mobile-apps.cdek.ru/api/v2/requestAuthCode",
+      "json": {
+        "countryISO": "RU",
+        "phone": "+{full_phone}"
+      },
+      "headers": {
+        "User-Agent": "CDEK/4.26.0 (Android/12; com.logistic.sdek; build/12023)",
+        "no-access-token": true,
+        "X-User-Timezone": "Asia/Yekaterinburg",
+        "X-User-Lang": "ru"
+      }
+    }
+  ]
+}
