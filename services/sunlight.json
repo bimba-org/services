@@ -1,0 +1,17 @@
+{
+  "phone_codes": [
+    7
+  ],
+  "requests": [
+    {
+      "method": "POST",
+      "url": "https://api.sunlight.net/v3/customers/authorization/mobile/",
+      "json": {
+        "phone": "{full_phone}"
+      },
+      "headers": {
+        "User-Agent": "sunlight-android, 17701168"
+      }
+    }
+  ]
+}
