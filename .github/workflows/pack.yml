@@ -14,13 +14,10 @@ jobs:
           fetch-depth: 0
 
       - name: Install tools
-        run: sudo apt install -y jq moreutils
-
-      - name: Format services
-        run: for file in services/*.json; do jq < $file | sponge $file; done
+        run: sudo apt install -y jq
 
       - name: Pack services
-        run: python pack.py
+        run: sh pack.sh
 
       - name: Commit files
         run: |
